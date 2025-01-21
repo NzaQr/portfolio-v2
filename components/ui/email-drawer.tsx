@@ -12,7 +12,7 @@ import {
 } from "@/components/ui/drawer";
 
 import { Button } from "@/components/ui/button";
-import { Calendar, Mail, SquareArrowOutUpRight, X } from "lucide-react";
+import { Calendar, Mail, SquareArrowOutUpRight } from "lucide-react";
 import { useEffect, useState } from "react";
 import {
   Dialog,
@@ -165,7 +165,6 @@ export default function EmailDrawer() {
                 variant="outline"
                 className="w-full transition-all hover:bg-destructive hover:text-destructive-foreground"
               >
-                <X className="mr-2 h-4 w-4" />
                 Cancel
               </Button>
             </DrawerClose>
