@@ -57,7 +57,7 @@ export default function Experience() {
             </div>
             <div className="text-muted-foreground ml-5">
               I was part of the redesign and maintenance of the landing page for{" "}
-              <Link href="https://bewise.com.es" target="_blank">
+              <Link href="https://fauna.com" target="_blank">
                 <span className="text-muted-foreground cursor-pointer group hover:text-[#6742F0] transition-colors duration-300 hover:font-bold">
                   Fauna{" "}
                   <ArrowUpRight className="inline-block w-3 h-3 mb-4 -ml-1 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
