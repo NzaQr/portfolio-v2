@@ -21,6 +21,16 @@ const projects = [
   },
   {
     id: 2,
+    title: "FrameRate",
+    description:
+      "An app that allows you to save and rate movies, built with Tamagui and a container-component pattern approach.",
+    tech: ["Expo", "Tamagui", "Reanimated", "Supabase", "Zustand"],
+    demo: "https://expo.dev/preview/update?message=first%20update&updateRuntimeVersion=1.0.0&createdAt=2025-01-30T20%3A41%3A26.793Z&slug=exp&projectId=c23c9c38-b6c4-438f-8d96-f1832d6de8cc&group=106df23c-0088-4fd7-8871-888d58af34ab",
+    repo: "https://github.com/NzaQr/frame-rate",
+    isLegacy: false,
+  },
+  {
+    id: 3,
     title: "Clicker",
     description: "A clicker game built with React Three Fiber. WIP.",
     tech: ["R3F", "React Spring", "Zustand"],
@@ -28,16 +38,6 @@ const projects = [
     repo: "https://github.com/NzaQr/monton-clicker",
     isLegacy: false,
     isExperimental: true,
-  },
-  {
-    id: 3,
-    title: "FrameRate",
-    description:
-      "An app that allows you to save and rate movies, built with Tamagui and a container-component pattern approach.",
-    tech: ["Expo", "Tamagui", "Reanimated", "Zustand"],
-    demo: "https://expo.dev/preview/update?message=first%20update&updateRuntimeVersion=1.0.0&createdAt=2025-01-30T20%3A41%3A26.793Z&slug=exp&projectId=c23c9c38-b6c4-438f-8d96-f1832d6de8cc&group=106df23c-0088-4fd7-8871-888d58af34ab",
-    repo: "https://github.com/NzaQr/frame-rate",
-    isLegacy: false,
   },
   {
     id: 4,
