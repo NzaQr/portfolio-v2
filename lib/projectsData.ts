@@ -1,26 +1,35 @@
 export interface Project {
-    id: number;
-    title: string;
-    description: string;
-    tech: string[];
-    demo: string;
-    repo: string;
-    isLegacy: boolean;
-    isExperimental?: boolean;
-  }
+  id: number;
+  title: string;
+  description: string;
+  tech: string[];
+  demo: string;
+  repo: string;
+  isLegacy: boolean;
+  isExperimental?: boolean;
+}
 
 const projects = [
   {
-    id: 1,
-    title: "Portfolio",
-    description: "The current portfolio you are visiting.",
-    tech: ["Next.js", "shadcn/ui", "Tailwind", "Motion"],
-    demo: "",
-    repo: "https://github.com/NzaQr/portfolio-v2",
+    id: 0,
+    title: "Scribo",
+    description:
+      "A blog platform with user authentication, markdown editor, and social features like comments and likes.",
+    tech: [
+      "Next.js",
+      "Tanstack/Query",
+      "Zustand",
+      "Tailwind",
+      "Node.js",
+      "Express",
+      "MongoDB",
+    ],
+    demo: "https://scribo-omega.vercel.app/",
+    repo: "https://github.com/NzaQr/scribo",
     isLegacy: false,
   },
   {
-    id: 2,
+    id: 1,
     title: "FrameRate",
     description:
       "An app that allows you to save and rate movies, built with Tamagui and a container-component pattern approach.",
@@ -30,9 +39,18 @@ const projects = [
     isLegacy: false,
   },
   {
+    id: 2,
+    title: "Portfolio",
+    description: "The current portfolio you are visiting.",
+    tech: ["Next.js", "shadcn/ui", "Tailwind", "Motion"],
+    demo: "",
+    repo: "https://github.com/NzaQr/portfolio-v2",
+    isLegacy: false,
+  },
+  {
     id: 3,
     title: "Clicker",
-    description: "A clicker game built with React Three Fiber. WIP.",
+    description: "A clicker game built with React Three Fiber (concept).",
     tech: ["R3F", "React Spring", "Zustand"],
     demo: "https://clicker-game-cyan-ten.vercel.app",
     repo: "https://github.com/NzaQr/monton-clicker",

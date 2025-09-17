@@ -7,12 +7,11 @@ export default function About() {
   return (
     <>
       <p className="text-muted-foreground mt-4">
-        Hi there! I&apos;m <span className="font-bold">Nazareno</span>. A
-        frontend developer from Argentina.
+        Hi! I&apos;m <span className="font-bold">Nazareno</span>. A software
+        developer from Argentina.
       </p>
       <p className="text-muted-foreground ">
-        I’m currently learning Swift and, since 2021, developing apps and
-        websites with passion at{" "}
+        Currently building apps and websites with passion at{" "}
         <Link href="https://bewise.com.es" target="_blank">
           <span className="text-muted-foreground cursor-pointer group hover:text-[#FF81A3] transition-colors duration-300 hover:font-bold">
             Bewise{" "}
