@@ -6,10 +6,6 @@ import Link from "next/link";
 export default function About() {
   return (
     <>
-      <p className="text-muted-foreground mt-4">
-        Hi! I&apos;m <span className="font-bold">Nazareno</span>. A software
-        developer from Argentina.
-      </p>
       <p className="text-muted-foreground ">
         Currently building apps and websites with passion at{" "}
         <Link href="https://bewise.com.es" target="_blank">

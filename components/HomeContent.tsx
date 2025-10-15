@@ -26,7 +26,7 @@ export default function HomeContent() {
       <header className="text-center mb-12">
         <div className="flex justify-between items-center">
           <div className="top-4 left-4">
-            <h1 className="text font-bold">nzqr.dev</h1>
+            <h1 className="text font-bold">Nazareno Quiroga</h1>
           </div>
           <div className="top-4 right-4">
             <ThemeToggle />
@@ -34,25 +34,23 @@ export default function HomeContent() {
         </div>
       </header>
       <About />
-      <div className="flex mt-6">
-        <div className="flex flex-col md:flex-row">
-          <div className="w-full md:w-3/4 flex mr-0 md:mr-5 mb-5 md:mb-0">
-            <Experience />
-          </div>
+      <div className="flex flex-col md:flex-row gap-5 mt-5">
+        <div className="w-full md:w-2/3">
+          <Experience />
+        </div>
 
-          <div className="w-full md:w-1/4 flex flex-col">
-            {isMobile ? (
-              <>
-                <TechStack />
-                <Contact />
-              </>
-            ) : (
-              <>
-                <Contact />
-                <TechStack />
-              </>
-            )}
-          </div>
+        <div className="w-full md:w-1/3 flex flex-col">
+          {isMobile ? (
+            <>
+              <TechStack />
+              <Contact />
+            </>
+          ) : (
+            <>
+              <Contact />
+              <TechStack />
+            </>
+          )}
         </div>
       </div>
       <Projects />
