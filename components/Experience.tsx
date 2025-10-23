@@ -72,11 +72,11 @@ export default function Experience() {
               </div>
               <div className="flex-1">
                 <h3 className="text-lg font-semibold mb-2">
-                  Financial Management Tool
+                  Financial Analysis Platform
                 </h3>
                 <p className="text-sm text-muted-foreground mb-4">
-                  Working on a real-time financial tool with automated workflows
-                  and scalable architecture
+                  Working on a financial analysis platform with automated
+                  workflows, data management, and scalable architecture.
                 </p>
                 <div className="flex flex-wrap gap-2">
                   <Badge variant="outline">React.js</Badge>
