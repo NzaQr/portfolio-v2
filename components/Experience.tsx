@@ -4,13 +4,7 @@ import { useState, useEffect, useRef } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import {
-  MapPin,
-  Globe,
-  ShoppingCart,
-  FileText,
-  Smartphone,
-} from "lucide-react";
+import { FileText, Smartphone } from "lucide-react";
 
 export default function Experience() {
   const [isExpanded, setIsExpanded] = useState(false);
