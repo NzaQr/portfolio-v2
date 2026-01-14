@@ -72,7 +72,7 @@ export default function EmailDrawer() {
                 }}
               >
                 <Mail className="mr-2 h-4 w-4" />
-                {copied ? "Copied to clipboard!" : "Click to copy my email"}
+                {copied ? "Copied to clipboard!" : "Copy my email address"}
               </Button>
               <Button
                 asChild
@@ -85,7 +85,7 @@ export default function EmailDrawer() {
                   rel="noreferrer"
                 >
                   <Calendar className="mr-2 h-4 w-4" />
-                  Set up a 30min meeting
+                  Set up a meeting
                 </a>
               </Button>
               <Button
@@ -132,7 +132,7 @@ export default function EmailDrawer() {
               }}
             >
               <Mail className="mr-2 h-4 w-4" />
-              {copied ? "Copied to clipboard!" : "Click to copy my email"}
+              {copied ? "Copied to clipboard!" : "Copy my email address"}
             </Button>
             <Button
               asChild
@@ -145,7 +145,7 @@ export default function EmailDrawer() {
                 rel="noreferrer"
               >
                 <Calendar className="mr-2 h-4 w-4" />
-                Set up a 30min meeting
+                Set up a meeting
               </a>
             </Button>
             <Button

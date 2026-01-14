@@ -4,7 +4,13 @@ import { useState, useEffect, useRef } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { MapPin, Globe, ShoppingCart, FileText } from "lucide-react";
+import {
+  MapPin,
+  Globe,
+  ShoppingCart,
+  FileText,
+  Smartphone,
+} from "lucide-react";
 
 export default function Experience() {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -64,24 +70,38 @@ export default function Experience() {
 
       <CardContent className="space-y-6">
         <div ref={contentRef} className="space-y-8">
+          <p className="text-sm text-muted-foreground mb-6">
+            Development of web and mobile applications, with focus on
+            performance, scalability, and user experience.
+          </p>
+
           <div className="group relative">
-            <div className="flex gap-4 items-start">
-              <div className="flex justify-center p-2">
+            <div className="flex gap-4">
+              <div className="flex items-center justify-center p-2 relative shrink-0 self-start">
                 <span className="animate-ping absolute inline-flex h-4 w-4 rounded-full bg-gray-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-4 w-4 bg-green-500"></span>
               </div>
               <div className="flex-1">
-                <h3 className="text-lg font-semibold mb-2">
-                  Financial Analysis Platform
-                </h3>
-                <p className="text-sm text-muted-foreground mb-4">
-                  Working on a financial analysis platform with automated
-                  workflows, data management, and scalable architecture.
-                </p>
+                <div className="flex items-center h-9">
+                  <h3 className="text-lg font-semibold">Web / Frontend</h3>
+                </div>
+                <div className="mb-2"></div>
+                <ul className="text-sm text-muted-foreground mb-4 space-y-2 list-disc list-inside">
+                  <li>
+                    Development of web apps with React and Next.js for business
+                    platforms and landing pages.
+                  </li>
+                  <li>
+                    Focus on structure, state management, and data fetching
+                    using TypeScript, TanStack Query, and Zustand.
+                  </li>
+                  <li>Optimization of performance, UX, and accessibility.</li>
+                </ul>
                 <div className="flex flex-wrap gap-2">
-                  <Badge variant="outline">React.js</Badge>
+                  <Badge variant="outline">React</Badge>
+                  <Badge variant="outline">Next.js</Badge>
                   <Badge variant="outline">TypeScript</Badge>
-                  <Badge variant="outline">TanStack/Query</Badge>
+                  <Badge variant="outline">TanStack Query</Badge>
                   <Badge variant="outline">Zustand</Badge>
                 </div>
               </div>
@@ -90,69 +110,33 @@ export default function Experience() {
           </div>
 
           <div className="group relative">
-            <div className="flex gap-4 items-start">
-              <div className="flex justify-center p-2">
-                <ShoppingCart className="h-5 w-5 text-gray-600 dark:text-gray-400" />
+            <div className="flex gap-4">
+              <div className="flex items-center justify-center p-2 shrink-0 self-start">
+                <Smartphone className="h-5 w-5 text-gray-600 dark:text-gray-400" />
               </div>
               <div className="flex-1">
-                <h3 className="text-lg font-semibold mb-2">Delivery Apps</h3>
-                <p className="text-sm text-muted-foreground mb-4">
-                  Multi-platform delivery applications with real-time tracking
-                  and payments
-                </p>
+                <div className="flex items-center h-9">
+                  <h3 className="text-lg font-semibold">Mobile</h3>
+                </div>
+                <div className="mb-2"></div>
+                <ul className="text-sm text-muted-foreground mb-4 space-y-2 list-disc list-inside">
+                  <li>
+                    Development and maintenance of mobile applications with
+                    React Native.
+                  </li>
+                  <li>
+                    Integration of payments (Stripe), authentication (Apple /
+                    Google), and map services (Google Maps).
+                  </li>
+                  <li>
+                    Publication and maintenance on App Store and Play Store.
+                  </li>
+                </ul>
                 <div className="flex flex-wrap gap-2">
                   <Badge variant="outline">React Native</Badge>
-                  <Badge variant="outline">Apollo Client</Badge>
-                  <Badge variant="outline">
-                    Apple/Google Auth and Payments
-                  </Badge>
-                  <Badge variant="outline">Firebase</Badge>
-                </div>
-              </div>
-            </div>
-            <div className="mt-6 border-b border-dashed border-gray-300 dark:border-gray-600"></div>
-          </div>
-
-          <div className="group relative">
-            <div className="flex gap-4 items-start">
-              <div className="flex justify-center p-2">
-                <MapPin className="h-5 w-5 text-gray-600 dark:text-gray-400" />
-              </div>
-              <div className="flex-1">
-                <h3 className="text-lg font-semibold mb-2">
-                  Security Camera Monitoring
-                </h3>
-                <p className="text-sm text-muted-foreground mb-4">
-                  Highway security monitoring app with interactive maps and
-                  geolocation
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  <Badge variant="outline">React Native</Badge>
-                  <Badge variant="outline">Google Maps API</Badge>
-                  <Badge variant="outline">Geolocation</Badge>
-                  <Badge variant="outline">Performance</Badge>
-                </div>
-              </div>
-            </div>
-            <div className="mt-6 border-b border-dashed border-gray-300 dark:border-gray-600"></div>
-          </div>
-
-          <div className="group relative">
-            <div className="flex gap-4 items-start">
-              <div className="flex justify-center p-2">
-                <Globe className="h-5 w-5 text-gray-600 dark:text-gray-400" />
-              </div>
-              <div className="flex-1">
-                <h3 className="text-lg font-semibold mb-2">Landing Pages</h3>
-                <p className="text-sm text-muted-foreground mb-4">
-                  Development of landing pages with focus on accessibility and
-                  UX improvements
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  <Badge variant="outline">Next.js</Badge>
-                  <Badge variant="outline">Accessibility</Badge>
-                  <Badge variant="outline">UI/UX</Badge>
-                  <Badge variant="outline">Performance</Badge>
+                  <Badge variant="outline">Stripe</Badge>
+                  <Badge variant="outline">Apple/Google Auth</Badge>
+                  <Badge variant="outline">Google Maps</Badge>
                 </div>
               </div>
             </div>

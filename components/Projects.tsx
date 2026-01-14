@@ -12,9 +12,7 @@ export default function Projects() {
   return (
     <Card className="transition-all duration-300 hover:shadow-lg dark:hover:shadow-primary/5 mt-5">
       <CardHeader>
-        <CardTitle className="text-lg font-semibold">
-          Personal Projects
-        </CardTitle>
+        <CardTitle className="text-lg font-semibold">Projects</CardTitle>
       </CardHeader>
 
       <CardContent className="space-y-8">
